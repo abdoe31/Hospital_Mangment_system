@@ -1,0 +1,50 @@
+﻿@using BL
+@{
+
+    string  s = "salary";
+    string p = "preformance";
+}
+@model List<DoctorVM>
+<div class="container">
+
+    <a class="btn btn-primary" asp-action="Add" > Add  </a>
+
+    <a class="btn btn-primary" asp-action="index" asp-route-id="@s"> by salary  </a>
+
+    <a class="btn btn-primary" asp-action="index" asp-route-id="@p"> by preoformance   </a>
+
+    <table class="table table-striped ">
+        <thead class="thead-dark">
+            <tr class="table-active">
+                <th scope="col">  Name  </th>
+                <th scope="col">Specialization </th>
+                <th scope="col">PerformanceRate</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete </th>
+                <th scope="col">Details </th>
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var doctor in Model)
+            {
+                <tr>
+                    <td>@doctor.Name</td>
+                    <td>@doctor.Specialization</td>
+                    <td> @doctor.PerformanceRate</td>
+                    <td>@doctor.Salary</td>
+                    <td> <a class="btn btn-primary" asp-action="Edit" asp-route-id="@doctor.id">Edit</a>  </td>
+                    <td> <a class="btn btn-warning " asp-action="Delete" asp-route-id="@doctor.id">Delete</a>  </td>
+                    <td> <a class="btn btn-secondary" asp-action="Details" asp-route-id="@doctor.id">Details</a>  </td>
+
+                </tr>
+            }
+
+        </tbody>
+    </table>
+</div>

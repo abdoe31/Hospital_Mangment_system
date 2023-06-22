@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33424.131
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVC", "MVC.csproj", "{C9E34D20-45FC-4259-B942-CD31B1EF428C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Data_Access_Layer", "..\Data_Access_Layer\Data_Access_Layer.csproj", "{A697ADD4-BD9D-4594-B9FB-08E3B328BAF7}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BL", "..\BL\BL.csproj", "{4CBB40C2-32B1-47CE-A928-B741085E5018}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C9E34D20-45FC-4259-B942-CD31B1EF428C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9E34D20-45FC-4259-B942-CD31B1EF428C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9E34D20-45FC-4259-B942-CD31B1EF428C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9E34D20-45FC-4259-B942-CD31B1EF428C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A697ADD4-BD9D-4594-B9FB-08E3B328BAF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A697ADD4-BD9D-4594-B9FB-08E3B328BAF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A697ADD4-BD9D-4594-B9FB-08E3B328BAF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A697ADD4-BD9D-4594-B9FB-08E3B328BAF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4CBB40C2-32B1-47CE-A928-B741085E5018}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CBB40C2-32B1-47CE-A928-B741085E5018}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CBB40C2-32B1-47CE-A928-B741085E5018}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CBB40C2-32B1-47CE-A928-B741085E5018}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E428486B-8989-46E4-A4F2-150ABB5238CD}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,46 @@
+﻿@using BL
+@model DoctorVM
+
+@{
+    DoctorVM doctor = Model;
+
+    string s = "salary";
+    string p = "preformance";
+}
+<div class="container">
+
+    <a class="btn btn-primary" asp-action="Add"> Add  </a>
+    <a class="btn btn-primary" asp-action="Index"> Home  </a>
+
+
+    <table class="table table-striped ">
+        <thead class="thead-dark">
+            <tr class="table-active">
+                <th scope="col">  Name  </th>
+                <th scope="col">Specialization </th>
+                <th scope="col">PerformanceRate</th>
+                <th scope="col">Salary</th>
+                <th scope="col">Edit</th>
+                <th scope="col">Delete </th>
+               
+
+
+
+
+            </tr>
+        </thead>
+        <tbody>
+                <tr>
+                    <td>@doctor.Name</td>
+                    <td>@doctor.Specialization</td>
+                    <td> @doctor.PerformanceRate</td>
+                    <td>@doctor.Salary</td>
+                    <td> <a class="btn btn-primary" asp-action="Edit" asp-route-id="@doctor.id">Edit</a>  </td>
+                    <td> <a class="btn btn-warning " asp-action="Delete" asp-route-id="@doctor.id">Delete</a>  </td>
+
+                </tr>
+            
+
+        </tbody>
+    </table>
+</div>

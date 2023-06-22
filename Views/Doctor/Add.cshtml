@@ -1,0 +1,49 @@
+﻿@using BL
+@model DoctorAddVM
+
+<form acion="#" method="post">
+    <div class="row ">
+
+        <div class="col-3">
+            <label asp-for="Name"></label>
+        </div>
+
+        <div class="col-5">
+
+            <input asp-for="Name" class="form-control" />
+        </div>
+    </div>
+
+
+
+    <div class="row ">
+
+        <div class="col-3">
+            <label asp-for="Specialization"></label>
+        </div>
+
+        <div class="col-5">
+
+            <input asp-for="Specialization" class="form-control" />
+
+        </div>
+
+        <div class="row ">
+
+            <div class="col-3">
+                <label asp-for="Salary"></label>
+            </div>
+
+            <div class="col-5">
+
+                <input asp-for="Salary" class="form-control" />
+
+            </div>
+
+        
+
+
+
+                <button class="btn btn-primary">Submit </button>
+
+</form>
